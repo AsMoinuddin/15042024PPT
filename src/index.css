@@ -2,7 +2,35 @@
   --main-green: #66cc00; /* Main color */
   --dark-green: #00665e; /* Darker shade of green */
   --light-green: #99ff33; /* Lighter shade of green */
-  --light-teal: #4aa69e
+  --light-teal: #4aa69e; /* Light teal */
   --soil-color: #ff9933; /* Soil color */
   --hover-green: #00ff66; /* Hover color */
+}
+
+.ant-table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ant-table th,
+.ant-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--dark-green);
+  color: var(--dark-green); /* Set text color to dark */
+}
+
+.ant-table th {
+  background-color: var(--main-green);
+  color: white;
+}
+
+.ant-table tbody tr:nth-child(even) {
+  background-color: var(--light-green);
+}
+
+.ant-table td:first-child {
+  color: var(--light-teal);
 }
